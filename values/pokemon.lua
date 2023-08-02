@@ -315,7 +315,7 @@ poke = {
     desc = "often feared because it is ghost type, it tries its hardest to become friends with people. when someone does become friends, they become overjoyed.",
   },
   {
-    name = "wog",
+    name = "hop",
     types = {"normal"},
     gendm = 0.5,
     gendf = 0.5,
@@ -332,7 +332,7 @@ poke = {
     desc = "a flightless bird that can occassionally be seen walking with exactly one other. scientists are working 24/7 to figure out the plural form of its name.",
   },
   {
-    name = "wogotch",
+    name = "hopotch",
     types = {"normal"},
     gendm = 0.5,
     gendf = 0.5,
@@ -346,7 +346,7 @@ poke = {
     },
     egg = {"bird"},
     growth = "medium_slow",
-    desc = "a wogotch can always be seen traveling with one other wogotch. just when scientists think they figured out wog's plural, this evolution comes by and throws everything off.",
+    desc = "a hopotch can always be seen traveling with one other hopotch. just when scientists think they figured out hop's plural, this evolution comes by and throws everything off.",
   },
   {
     name = "snoboy",
@@ -1150,7 +1150,7 @@ poke = {
     desc = "a beok worked all its blubber off and now it's strong enough to cut open text",
   },
   {
-    name = "it.",
+    name = "it",
     types = {"water"},
     gendm = 0,
     gendf = 0,
