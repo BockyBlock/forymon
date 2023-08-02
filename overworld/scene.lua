@@ -1,5 +1,7 @@
 local scene = {}
 
+alltrainers = {"jill", "szoob", "player", "boy", "wick"}
+
 local tile_size = 32
 local move_delay = 0.2
 
@@ -50,8 +52,10 @@ function scene:load()
   if self.follow:getSprite() == sprites["overworld/wat"] then
     print(self.follow.sprite)
   end
-
-  self.player = Object:new("trainer", {sprite="player", x=0.5, y=0.5, layer=5})
+  
+  local person = table.random(alltrainers)
+  
+  self.player = Object:new("trainer", {sprite=person, x=0.5, y=0.5, layer=5})
   table.insert(self.objects, self.player)
   
   self.camera = {x=0.5, y=0.5, zoom=2}
@@ -213,6 +217,16 @@ function scene:keyPressed(key)
     if keydown["shift"] then
       local shifts = {"!","@","#","$","%","^","&","*"}
       key = shifts[tonumber(key)] or key
+	  if key == "return" then
+          local person = self.searchstr
+        --  addUndo{reason = "player_change",sprite = self.player.sprite,x = self.player.x,y = self.player.y,dir = self.player.dir,data = self.player.data}
+          removeFromTable(self.objects, self.player)
+          self.player = Object:new("trainer", {sprite=person, x=self.player.x, y=self.player.y, dir=self.player.dir, layer=4})
+          table.insert(self.objects, self.player)
+          self.searchstr = ""
+          self.searching = false
+          self.turn = self.turn + 1
+      end
     end
     if keydown["ctrl"] then
       if key == "backspace" then self.searchstr = "" end

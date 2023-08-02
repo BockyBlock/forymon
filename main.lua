@@ -34,9 +34,9 @@ function love.load()
             BBBBBBBB
   ]])
   if love.math.random() > 0.5 then
-    love.window.setTitle("babbemon reed")
+    love.window.setTitle("platforymon orang")
   else
-    love.window.setTitle("babbemon bleu")
+    love.window.setTitle("platforymon grun")
   end
   default_font = love.graphics.newFont()
   game_start_time = love.timer.getTime()
@@ -132,9 +132,9 @@ function love.keypressed(key)
   if key == "return" or key == "kpenter" then
     keydown["enter"] = true
   end
-  if key == "f1" then
+  if key == "1" then
     loadScene(overworld)
-  elseif key == "f2" then
+  elseif key == "2" then
     loadScene(battle)
   end
   if scene and scene.keyPressed then
