@@ -1,6 +1,6 @@
 local scene = {}
 
-alltrainers = {"jill", "szoob", "player", "boy", "wick"}
+alltrainers = {"jill", "szoob", "player", "boy", "wick", "kid"}
 
 local tile_size = 32
 local move_delay = 0.2
