@@ -63,7 +63,7 @@ poke = {
     egg = {"field"},
     growth = "medium_slow",
     attacks = {},
-    desc = "a commonly found pokemon, babs have an obsession with pushing the words found in the world. maybe it knows what to do with them.",
+    desc = "a commonly found pokemon, babs have an obsession with words. often they tear letters out of newspapers to make them",
   },
   {
     name = "babi",
@@ -80,7 +80,7 @@ poke = {
     },
     egg = {"field"},
     growth = "medium_slow",
-    desc = "in a fit of inspiration, bab grew another eye.",
+    desc = "in a fit of inspiration, bab grew another eye. three eyes means 1.5x the fun.",
   },
   {
     name = "babber",

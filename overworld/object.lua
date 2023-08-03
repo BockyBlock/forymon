@@ -130,7 +130,6 @@ function Object:canMove(x,y)
       end
 	end
     if thing.sink then
-		print("sinc")
 		if self.type == "trainer" then
 		result = false
 		else

@@ -132,9 +132,9 @@ function love.keypressed(key)
   if key == "return" or key == "kpenter" then
     keydown["enter"] = true
   end
-  if key == "1" then
+  if key == "1" and (keydown["alt"]) then
     loadScene(overworld)
-  elseif key == "2" then
+  elseif key == "2" and (keydown["alt"]) then
     loadScene(battle)
   end
   if scene and scene.keyPressed then
