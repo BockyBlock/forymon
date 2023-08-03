@@ -39,6 +39,12 @@ function scene:load()
       if math.random() < 0.02 then
         table.insert(self.objects, Object:new("roc", {x = x+0.5, y = y+0.5, layer = 5, push = true}))
       end
+      if math.random() < 0.02 then
+        table.insert(self.objects, Object:new("watr", {x = x+0.5, y = y+0.5, layer = 0, sink = true}))
+      end
+      if math.random() < 0.01 then
+        table.insert(self.objects, Object:new("wal", {x = x+0.5, y = y+0.5, layer = 0, nogo = true}))
+      end
     end
   end
   

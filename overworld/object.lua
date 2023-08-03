@@ -128,7 +128,23 @@ function Object:canMove(x,y)
       else
         result = false
       end
-    end
+	end
+    if thing.sink then
+		print("sinc")
+		if self.type == "trainer" then
+		result = false
+		else
+		thing.sink = false
+		thing.type = "watrdead"
+		thing.layer = 0
+		self.push = false
+		self.type = "til"
+		self.layer = 1
+		end
+	end
+    if thing.nogo then
+		result = false
+    end 
   end
   if not inBounds(x,y) then
     result = false
