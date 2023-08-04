@@ -31,8 +31,8 @@ trainers = {
   },
   {
     name = "fofo",
-    quote = "",
-    desc = "",
+    quote = "You want some fruts? I've show you fruts!",
+    desc = "A master of plant-types. He is a formidable force. His pokemon are not very formidable though",
   }
 }
 

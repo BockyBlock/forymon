@@ -138,7 +138,13 @@ function scene:keyPressed(key)
       else
         self.searchstr = self.searchstr:sub(1,-2)
       end
-    elseif key == "return" then
+    elseif key == "return" then--[[
+	  if keydown["shift"] then
+	  print(self.searchstr)
+      self.searchstr = ""
+      self.searching = false
+      self.person = alltrainers[self.searchstr]
+	  else ]]--
       if poke[self.searchstr] then
         self.poke1 = poke[self.searchstr]
         self.poke2 = poke[self.searchstr]
@@ -149,7 +155,8 @@ function scene:keyPressed(key)
         end
         self.searchstr = ""
         self.searching = false
-      end
+		end
+      --end
     elseif not keydown["ctrl"] then
       local specialkeys = {
         space = " ",
