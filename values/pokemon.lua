@@ -1508,6 +1508,60 @@ poke = {
     growth = "slow",
     attacks = {},
     desc = "it holds together by sheer willpower. it actually built its own body, so it must be a powerful engineer.",
+  },
+  {
+    name = "flamgo",
+    types = {"water", "flying"},
+    gendm = 0.25,
+    gendf = 0.25,
+    gaypb = 1,
+    catch = 64,
+    expy = 256,
+    able = {
+      first = nil,
+      second = nil,
+      hidden = nil,
+    },
+    egg = {"bird"},
+    growth = "fast",
+    attacks = {},
+    desc = "it is pink because it ate too much",
+  },
+  {
+    name = "ampboll",
+    types = {"electric", "steel"},
+    gendm = 0,
+    gendf = 0,
+    gaypb = 0.5,
+    catch = 16,
+    expy = 256,
+    able = {
+      first = nil,
+      second = nil,
+      hidden = nil,
+    },
+    egg = {"inorganic"},
+    growth = "fast",
+    attacks = {},
+    desc = "it looks like a boll so that people don't try to boll into boll a boll boll bolls boll the boll bolls boll boll"
+  },
+  {
+    name = "waly",
+    types = {"rock"},
+    gendm = 0.1,
+    gendf = 0.1,
+    gaypb = 0.5,
+    catch = 16,
+    expy = 256,
+    able = {
+      first = nil,
+      second = nil,
+      hidden = nil,
+    },
+    egg = {"inorganic"},
+    growth = "slow",
+    attacks = {},
+    desc = "its scales can protect it from all sorts of attacks, and double as a way to blend in the environment in an emergency."
   }
 }
 
