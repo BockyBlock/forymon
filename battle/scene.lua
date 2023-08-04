@@ -3,7 +3,7 @@ local scene = {}
 function scene:load()
   self.poke1 = table.random(poke)
   self.poke2 = table.random(poke)
-  alltrainers = {"kid", "boy", "player"}
+  alltrainers = {"kid", "boy", "player", "wick"}
   self.person = table.random(alltrainers)
   self.poke1shiny = love.math.random(1,4096) == 1
   self.poke2shiny = love.math.random(1,4096) == 1
