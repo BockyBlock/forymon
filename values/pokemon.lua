@@ -1313,7 +1313,7 @@ poke = {
   },
   {
     name = "sin",
-    types = {"ground", "plant"},
+    types = {"ground", "grass"},
     gendm = 0,
     gendf = 0,
     gaypb = 0.5,
@@ -1403,7 +1403,7 @@ poke = {
   },
   {
     name = "alal",
-    types = {"plant", "poison"},
+    types = {"grass", "poison"},
     gendm = 0,
     gendf = 1,
     gaypb = 0.5,
@@ -1421,7 +1421,7 @@ poke = {
   },
   {
     name = "leafy",
-    types = {"plant", "steel"},
+    types = {"grass", "steel"},
     gendm = 0.25,
     gendf = 0.75,
     gaypb = 0.25,
