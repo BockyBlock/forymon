@@ -101,7 +101,7 @@ poke = {
   },
   {
     name = "keek",
-    types = {"push"},
+    types = {"push", "move"},
     gendm = 0.05,
     gendf = 0,
     gaypb = 0.5,
