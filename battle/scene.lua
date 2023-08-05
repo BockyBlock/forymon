@@ -86,24 +86,20 @@ function scene:draw(dt)
     print("this player failed: "..(self.poke2shiny and "shiny " or "")..self.poke2.name)
   end
   
-  if self.poke1.types[1] ~= nil then
-    print(self.poke1.types[1])
-	love.graphics.draw(sprites["battle/types/" .. self.poke1.types[1]],110,351)
-  end
-  
-  if self.poke1.types[2] ~= nil then
-    print(self.poke1.types[2])
-	love.graphics.draw(sprites["battle/types/" .. self.poke1.types[2]],150,351)
-  end
-  
   if self.poke2.types[1] ~= nil then
-    print(self.poke2.types[1])
-	love.graphics.draw(sprites["battle/types/" .. self.poke2.types[1]],510,10)
+	love.graphics.draw(sprites["battle/types/" .. self.poke2.types[1]],110,351)
   end
   
   if self.poke2.types[2] ~= nil then
-    print(self.poke2.types[2])
-	love.graphics.draw(sprites["battle/types/" .. self.poke2.types[2]],550,10)
+	love.graphics.draw(sprites["battle/types/" .. self.poke2.types[2]],150,351)
+  end
+  
+  if self.poke1.types[1] ~= nil then
+	love.graphics.draw(sprites["battle/types/" .. self.poke1.types[1]],510,10)
+  end
+  
+  if self.poke1.types[2] ~= nil then
+	love.graphics.draw(sprites["battle/types/" .. self.poke1.types[2]],550,10)
   end
   
   if self.poke1.name == "temmi!!!" then
