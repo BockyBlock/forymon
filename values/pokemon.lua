@@ -1457,7 +1457,7 @@ poke = {
   },
   {
     name = "ty",
-    types = {"push", "defeat"},
+    types = {"move", "defeat"},
     gendm = 0.25,
     gendf = 0.75,
     gaypb = 0,
@@ -1547,7 +1547,7 @@ poke = {
   },
   {
     name = "waly",
-    types = {"rock"},
+    types = {"rock", "stop"},
     gendm = 0.1,
     gendf = 0.1,
     gaypb = 0.5,
