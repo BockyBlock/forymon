@@ -36,8 +36,8 @@ function scene:draw(dt)
       self.test_starttime = 0
     end
   end
-  p1draw = sprites["battle/"..((self.st_shiny or self.poke1shiny) and "shiny/" or "")..(self.poke1.sprite or self.poke1.name).."_f"..(self.poke1.anim and ("_"..tostring(anim_stage)) or "")]
-  p2draw = sprites["battle/"..((self.st_shiny or self.poke2shiny) and "shiny/" or "")..(self.poke2.sprite or self.poke2.name).."_b"..(self.poke2.anim and ("_"..tostring(anim_stage)) or "")]
+  p1draw = sprites["battle/pokemon/"..((self.st_shiny or self.poke1shiny) and "shiny/" or "")..(self.poke1.sprite or self.poke1.name).."_f"..(self.poke1.anim and ("_"..tostring(anim_stage)) or "")]
+  p2draw = sprites["battle/pokemon/"..((self.st_shiny or self.poke2shiny) and "shiny/" or "")..(self.poke2.sprite or self.poke2.name).."_b"..(self.poke2.anim and ("_"..tostring(anim_stage)) or "")]
   
   love.graphics.draw(opponent,305,1)
   
@@ -91,14 +91,14 @@ function scene:draw(dt)
     if self.temtime ~= 0 then
       dx = dx+math.floor(((love.timer.getTime()/self.temtime)-1)*200000)
     end
-    love.graphics.draw(sprites["battle/temmi_face_f"],529+dx,57+dy)
+    love.graphics.draw(sprites["battle/pokemon/temmi_face_f"],529+dx,57+dy)
   end
   if self.poke2.name == "temmi!!!" then
     local dx,dy = love.math.random(-1,1),love.math.random(-1,1)
     if self.temtime ~= 0 then
       dx = dx-math.floor(((love.timer.getTime()/self.temtime)-1)*200000)
     end
-    love.graphics.draw(sprites["battle/temmi_face_b"],108+dx,160+dy)
+    love.graphics.draw(sprites["battle/pokemon/temmi_face_b"],108+dx,160+dy)
   end
   
   local texty = 250
