@@ -1403,7 +1403,7 @@ poke = {
   },
   {
     name = "alal",
-    types = {"grass", "poison"},
+    types = {"grass", "fairy"},
     gendm = 0,
     gendf = 1,
     gaypb = 0.5,
