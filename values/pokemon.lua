@@ -315,7 +315,7 @@ poke = {
     desc = "often feared because it is ghost type, it tries its hardest to become friends with people. when someone does become friends, they become overjoyed.",
   },
   {
-    name = "hop",
+    name = "woug",
     types = {"normal"},
     gendm = 0.5,
     gendf = 0.5,
@@ -346,7 +346,7 @@ poke = {
     },
     egg = {"bird"},
     growth = "medium_slow",
-    desc = "a hopotch can always be seen traveling with one other hopotch. just when scientists think they figured out hop's plural, this evolution comes by and throws everything off.",
+    desc = "a hopotch can always be seen traveling with one other hopotch. just when scientists think they figured out woug's plural, this evolution comes by and throws everything off.",
   },
   {
     name = "snoboy",
