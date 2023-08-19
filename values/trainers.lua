@@ -37,14 +37,8 @@ trainers = {
   },
   {
     name = "fofo",
-    quote = "You want some fruts? I've show you fruts!",
+    quote = "You want some fruts? I'll show you fruts!",
     desc = "A master of plant-types. He is a formidable force. His pokemon are not very formidable though",
 	element = "plant"
   }
 }
-
-train_i = {}
-for i,v in ipairs(train) do
-  train[v.name] = v
-  train_i[v.name] = i
-end

@@ -3,8 +3,9 @@ local scene = {}
 function scene:load()
   self.poke1 = table.random(poke)
   self.poke2 = table.random(poke)
+  print(trainers[math.random(1, 7)].name)
   alltrainers = {"kid", "boy", "player", "wick", "jill", "szoob", "fofo"}
-  self.person = table.random(alltrainers)
+  self.person = table.random(trainers)
   self.poke1shiny = love.math.random(1,4096) == 1
   self.poke2shiny = love.math.random(1,4096) == 1
   self.desc1 = false
@@ -23,7 +24,7 @@ end
 
 function scene:draw(dt)
   local p1draw,p2draw,opponent
-  local opponent = sprites["battle/trainer/" .. self.person]
+  local opponent = sprites["battle/trainer/" .. self.person.name]
   if self.spritetest then
     if self.st_shiny then
       doSpriteTest()
@@ -126,7 +127,7 @@ function scene:draw(dt)
   if self.desc2 then
     love.graphics.printf(self.poke2.desc,75,50,200)
   else
-    love.graphics.printf(("\"" .. "I don't have anything to say because we haven't yet figured out how to make the game read the quotes".. "\""),75,50,200)
+    love.graphics.printf(self.person.quote,75,50,200)
   end
   
   if not self.desc1 then
@@ -196,7 +197,7 @@ function scene:keyPressed(key)
       local newpoke1 = self.poke1
       local newpoke2 = self.poke2
 	  
-	  self.person = table.random(alltrainers)
+	  self.person = table.random(trainers)
       while newpoke1 == self.poke1 do
         newpoke1 = table.random(poke)
       end
