@@ -25,6 +25,7 @@ types = {
     dragon = 1,
     stop = 0.5,
     move = 1,
+    pixel = 1,
   },
   defeat = {
     you = 2,
@@ -50,6 +51,7 @@ types = {
     dragon = 1,
     stop = 1,
     move = 0.5,
+    pixel = 0,
   },
   push = {
     you = 0.5,
@@ -75,6 +77,7 @@ types = {
     dragon = 1,
     stop = 2,
     move = 1,
+    pixel = 1,
   },
   grass = {
     you = 1,
@@ -100,6 +103,7 @@ types = {
     dragon = 0.5,
     stop = 2,
     move = 1,
+    pixel = 1,
   },
   fire = {
     you = 1,
@@ -125,6 +129,7 @@ types = {
     dragon = 0.5,
     stop = 1,
     move = 1,
+    pixel = 1,
   },
   water = {
     you = 1,
@@ -150,6 +155,7 @@ types = {
     dragon = 0.5,
     stop = 1,
     move = 2,
+    pixel = 2,
   },
   electric = {
     you = 1,
@@ -175,6 +181,7 @@ types = {
     dragon = 0.5,
     stop = 1,
     move = 1,
+    pixel = 2,
   },
   ice = {
     you = 1,
@@ -200,6 +207,7 @@ types = {
     dragon = 2,
     stop = 1,
     move = 2,
+    pixel = 1,
   },
   ground = {
     you = 1,
@@ -225,6 +233,7 @@ types = {
     dragon = 1,
     stop = 1,
     move = 0.5,
+    pixel = 1,
   },
   rock = {
     you = 1,
@@ -250,6 +259,7 @@ types = {
     dragon = 1,
     stop = 0.5,
     move = 0.5,
+    pixel = 0.5,
   },
   flying = {
     you = 1,
@@ -275,6 +285,7 @@ types = {
     dragon = 1,
     stop = 1,
     move = 0.5,
+    pixel = 1,
   },
   poison = {
     you = 1,
@@ -300,6 +311,7 @@ types = {
     dragon = 1,
     stop = 0.5,
     move = 1,
+    pixel = 1,
   },
   normal = {
     you = 1,
@@ -325,6 +337,7 @@ types = {
     dragon = 1,
     stop = 0.5,
     move = 1,
+    pixel = 0.5,
   },
   ghost = {
     you = 1,
@@ -350,6 +363,7 @@ types = {
     dragon = 1,
     stop = 2,
     move = 1,
+    pixel = 2,
   },
   dark = {
     you = 1,
@@ -375,6 +389,7 @@ types = {
     dragon = 1,
     stop = 1,
     move = 1,
+    pixel = 2,
   },
   steel = {
     you = 1,
@@ -400,6 +415,7 @@ types = {
     dragon = 1,
     stop = 1,
     move = 1,
+    pixel = 0.5,
   },
   fairy = {
     you = 1,
@@ -425,6 +441,7 @@ types = {
     dragon = 2,
     stop = 1,
     move = 1,
+    pixel = 1,
   },
   fighting = {
     you = 1,
@@ -450,6 +467,7 @@ types = {
     dragon = 1,
     stop = 1,
     move = 0.5,
+    pixel = 0.5,
   },
   psychic = {
     you = 0.5,
@@ -475,6 +493,7 @@ types = {
     dragon = 1,
     stop = 2,
     move = 1,
+    pixel = 1,
   },
   bug = {
     you = 1,
@@ -500,6 +519,7 @@ types = {
     dragon = 1,
     stop = 1,
     move = 1,
+    pixel = 2,
   },
   dragon = {
     you = 1,
@@ -525,6 +545,7 @@ types = {
     dragon = 2,
     stop = 1,
     move = 1,
+    pixel = 1,
   },
   stop = {
     you = 1,
@@ -550,6 +571,7 @@ types = {
     dragon = 1,
     stop = 0.5,
     move = 1,
+    pixel = 1,
   },
   move = {
     you = 1,
@@ -575,7 +597,34 @@ types = {
     dragon = 1,
     stop = 0,
     move = 2,
+    pixel = 1,
   },
+  pixel = {
+    you = 1,
+    defeat = 1,
+    push = 1,
+    grass = 1,
+    fire = 1,
+    water = 0.5,
+    electric = 2,
+    ice = 1,
+    ground = 1,
+    rock = 1,
+    flying = 1,
+    poison = 1,
+    normal = 1,
+    ghost = 2,
+    dark = 0.5,
+    steel = 1,
+    fairy = 2,
+    fighting = 1,
+    psychic = 1,
+    bug = 0.5,
+    dragon = 1,
+    stop = 2,
+    move = 2,
+    pixel = 0,
+  }
 }
 
 type_colors = {
@@ -601,4 +650,5 @@ type_colors = {
   bug = {.639,.757,.22},
   dragon = {.392,.22,.878},
   stop = {.148,.367,.171},
+  pixel = {1,0,1},
 }

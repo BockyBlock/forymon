@@ -7,8 +7,8 @@ trainers = {
   },
   {
     name = "boy",
-    quote = "Oh? Do you wanna know why my chest is hollow? Well, I do too.",
-    desc = "A tourist from the surface of a Boy. He says the hole in his chest might make him more aerodynamic, but he's not sure.",
+    quote = "Oh? Do you wanna know why my body is hollow? Well, I do too.",
+    desc = "A tourist from the surface of a Boy. He says his hollow body might make him more aerodynamic, but he's not sure.",
 	element = "normal"
   },
   {
