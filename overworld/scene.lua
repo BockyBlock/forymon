@@ -59,9 +59,9 @@ function scene:load()
     print(self.follow.sprite)
   end
   
-  local person = table.random(alltrainers)
+  local person = table.random(trainers)
   
-  self.player = Object:new("trainer", {sprite=person, x=0.5, y=0.5, layer=5})
+  self.player = Object:new("trainer", {sprite=person.name, x=0.5, y=0.5, layer=5})
   table.insert(self.objects, self.player)
   
   self.camera = {x=0.5, y=0.5, zoom=2}
@@ -227,7 +227,7 @@ function scene:keyPressed(key)
           local person = self.searchstr
         --  addUndo{reason = "player_change",sprite = self.player.sprite,x = self.player.x,y = self.player.y,dir = self.player.dir,data = self.player.data}
           removeFromTable(self.objects, self.player)
-          self.player = Object:new("trainer", {sprite=person, x=self.player.x, y=self.player.y, dir=self.player.dir, layer=4})
+          self.player = Object:new("trainer", {sprite=person.name, x=self.player.x, y=self.player.y, dir=self.player.dir, layer=4})
           table.insert(self.objects, self.player)
           self.searchstr = ""
           self.searching = false
