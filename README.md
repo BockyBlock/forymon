@@ -14,3 +14,5 @@ this modd is mainly just to test my skills
 - world generation can genrate watr at wal
 - layering is weird
 - changing player character after moving rightn't makes you go sideways
+# SPECIAL GUESTS!!!
+- mister joseph epice somedude v drew one of retra's frames

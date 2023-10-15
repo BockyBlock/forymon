@@ -1874,7 +1874,92 @@ poke = {
     },
     egg = {"cant"},
     growth = "fast",
-    desc = "The scribble thing. Why did you grab the scribble thing? It's clearly an abomination!",
+    desc = "The scribbly abomination. Why did you catch the scribble thing? The abomation,",
+  },
+  {
+    name = "ee er",
+    types = {"dragon", "push"},
+    gendm = 0.6,
+    gendf = 0.3,
+    gaypb = 0.2,
+    catch = 255,
+    expy = 20,
+    able = {
+      first = nil,
+      second = nil,
+      hidden = nil,
+    },
+    egg = {"insect"},
+    growth = "fast",
+    desc = "its long snout lets it sniff trees. you heard me right. those are NOT eyes.",
+  },
+  {
+    name = "lito",
+    types = {"electric", "move"},
+    gendm = 0.9,
+    gendf = 0,
+    gaypb = 1,
+    catch = 255,
+    expy = 20,
+    able = {
+      first = nil,
+      second = nil,
+      hidden = nil,
+    },
+    egg = {"field"},
+    growth = "fast",
+    desc = "when a lito finds a mon it likes, it sticks with it until the very end! ... or until it's told to leave"
+  },
+  {
+    name = "roro",
+    types = {"water", "flying"},
+    gendm = 0,
+    gendf = 0,
+    gaypb = 0.5,
+    catch = 255,
+    expy = 20,
+    able = {
+      first = nil,
+      second = nil,
+      hidden = nil,
+    },
+    egg = {"frog"},
+    growth = "slow",
+    desc = "an incredibly evasive... thing. it made its eyes smaller in an effort to have fewer weak spots."
+  },
+  {
+    name = "whoa",
+    types = {"water", "defeat"},
+    gendm = 0.2,
+    gendf = 0.5,
+    gaypb = 0.5,
+    catch = 255,
+    expy = 512,
+    able = {
+      first = nil,
+      second = nil,
+      hidden = nil,
+    },
+    egg = {"fish"},
+    growth = "slow",
+    desc = "the most excitable mon you'll ever meet. it's full of awe to learn anything new."
+  },
+  {
+    name = "jsdhguos",
+    types = {"push", "normal"},
+    gendm = 0,
+    gendf = 0,
+    gaypb = 0.5,
+    catch = 255,
+    expy = 512,
+    able = {
+      first = nil,
+      second = nil,
+      hidden = nil,
+    },
+    egg = {"cant"},
+    growth = "slow",
+    desc = "a very slow pokemon. it seems to never move at all. however, it runs around tirelessly when not being watched... probably."
   }
 }
 
