@@ -20,6 +20,16 @@ function scene:load()
   self.st_shiny = false
 end
 
+function drawtype(element,xpos,ypos)
+  if element ~= nil then
+	if sprites["battle/types/" .. element] ~= nil then
+	love.graphics.draw(sprites["battle/types/" .. element],xpos,ypos)
+	else
+	love.graphics.draw(sprites["overworld/wat"],xpos,ypos)
+	end
+  end
+end
+
 function scene:draw(dt)
   local p1draw,p2draw,opponent
   local opponent = sprites["battle/trainer/" .. self.person.name]
@@ -38,7 +48,11 @@ function scene:draw(dt)
   p1draw = sprites["battle/pokemon/"..((self.st_shiny or self.poke1shiny) and "shiny/" or "")..(self.poke1.sprite or self.poke1.name).."_f"..(self.poke1.anim and ("_"..tostring(anim_stage)) or "")]
   p2draw = sprites["battle/pokemon/"..((self.st_shiny or self.poke2shiny) and "shiny/" or "")..(self.poke2.sprite or self.poke2.name).."_b"..(self.poke2.anim and ("_"..tostring(anim_stage)) or "")]
   
+  if opponent ~= nil then
   love.graphics.draw(opponent,305,1)
+  else
+  love.graphics.draw(sprites["overworld/wat"],305,1)
+  end
   
   local p1w,p1h,p2w,p2h = 160,160,160,160
   if p1draw then
@@ -85,19 +99,11 @@ function scene:draw(dt)
     print("this player failed: "..(self.poke2shiny and "shiny " or "")..self.poke2.name)
   end
   
-  --this doesn't feel optimized
-  if self.poke2.types[1] ~= nil then
-	love.graphics.draw(sprites["battle/types/" .. self.poke2.types[1]],110,351)
-  end
-  if self.poke2.types[2] ~= nil then
-	love.graphics.draw(sprites["battle/types/" .. self.poke2.types[2]],150,351)
-  end
-  if self.poke1.types[1] ~= nil then
-	love.graphics.draw(sprites["battle/types/" .. self.poke1.types[1]],510,10)
-  end
-  if self.poke1.types[2] ~= nil then
-	love.graphics.draw(sprites["battle/types/" .. self.poke1.types[2]],550,10)
-  end
+  --it almost feels optimized...
+  drawtype(self.poke1.types[1],110,351)
+  drawtype(self.poke2.types[2],150,351)
+  drawtype(self.poke1.types[1],510,10)
+  drawtype(self.poke1.types[2],550,10)
   
   if self.poke1.name == "temmi!!!" then
     local dx,dy = love.math.random(-1,1),love.math.random(-1,1)

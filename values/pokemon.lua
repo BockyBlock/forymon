@@ -1960,6 +1960,76 @@ poke = {
     egg = {"cant"},
     growth = "slow",
     desc = "a very slow pokemon. it seems to never move at all. however, it runs around tirelessly when not being watched... probably."
+  },
+  {
+    name = "trie",
+    types = {"move", "defeat"},
+    gendm = 0.2,
+    gendf = 0.2,
+    gaypb = 0.5,
+    catch = 255,
+    expy = 256,
+    able = {
+      first = nil,
+      second = nil,
+      hidden = nil,
+    },
+    egg = {"any"},
+    growth = "slow",
+    desc = "trie: the absolute thing of all time. they are absurdly common, appearing from the dust and whizzing around."
+  },
+  {
+    name = "directions are ok",
+    types = {"move", "fairy"},
+    gendm = 0.2,
+    gendf = 0.2,
+    gaypb = 0.5,
+    catch = 255,
+    expy = 256,
+    able = {
+      first = nil,
+      second = nil,
+      hidden = nil,
+    },
+    egg = {"fairy"},
+    growth = "slow",
+    desc = "trie: the absolute thing of all time. they are absurdly common, appearing from the dust and whizzing around."
+  },
+  {
+    name = "telt",
+    types = {"move", "fairy"},
+    gendm = 0.5,
+    gendf = 0.5,
+    gaypb = 0,
+    catch = 255,
+    expy = 256,
+	gendered = true,
+    able = {
+      first = nil,
+      second = nil,
+      hidden = nil,
+    },
+    egg = {"field"},
+    growth = "slow",
+    desc = "trie: the absolute thing of all time. they are absurdly common, appearing from the dust and whizzing around."
+  },
+  {
+    name = "cucucu",
+    types = {"push", "notypeman"},
+    gendm = 0.5,
+    gendf = 0.5,
+    gaypb = 0,
+    catch = 255,
+    expy = 256,
+	gendered = true,
+    able = {
+      first = nil,
+      second = nil,
+      hidden = nil,
+    },
+    egg = {"field"},
+    growth = "slow",
+    desc = "placeholder"
   }
 }
 

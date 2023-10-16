@@ -102,5 +102,37 @@ trainers = {
 	element = {"electric", "flying"},
 	starter = {"err"},
 	pronouns = {"it"}
+  },
+  {
+    name = "mr me",
+    quote = "Says here you're gonna lose.",
+    desc = "placeholder",
+	element = {"defeat","psychic"},
+	starter = {"placeholder"},
+	pronouns = {"placeholder"}
+  },
+  {
+    name = "greg",
+    quote = "D:",
+    desc = "placeholder",
+	element = {"electric"},
+	starter = {"placeholder"},
+	pronouns = {"placeholder"}
+  },
+  {
+    name = "jiji",
+    quote = "GG",
+    desc = "placeholder",
+	element = {"placeholder"},
+	starter = {"placeholder"},
+	pronouns = {"placeholder"}
+  },
+  {
+    name = "znzba",
+    quote = "ZZZZZZ",
+    desc = "placeholder",
+	element = {"placeholder"},
+	starter = {"placeholder"},
+	pronouns = {"placeholder"}
   }
 }
