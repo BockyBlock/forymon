@@ -6,6 +6,8 @@ function scene:load()
   self.person = table.random(trainers)
   self.poke1shiny = love.math.random(1,4096) == 1
   self.poke2shiny = love.math.random(1,4096) == 1
+  self.poke1genderv = ((love.math.random(1,100))/100)
+  self.poke2genderv = ((love.math.random(1,100))/100)
   self.desc1 = false
   self.desc2 = false
 
@@ -45,9 +47,34 @@ function scene:draw(dt)
       self.test_starttime = 0
     end
   end
-  p1draw = sprites["battle/pokemon/"..((self.st_shiny or self.poke1shiny) and "shiny/" or "")..(self.poke1.sprite or self.poke1.name).."_f"..(self.poke1.anim and ("_"..tostring(anim_stage)) or "")]
-  p2draw = sprites["battle/pokemon/"..((self.st_shiny or self.poke2shiny) and "shiny/" or "")..(self.poke2.sprite or self.poke2.name).."_b"..(self.poke2.anim and ("_"..tostring(anim_stage)) or "")]
   
+  if self.poke1.gendered then
+	if self.poke1genderv < self.poke1.gendm then
+		self.poke1gender = "m_"
+	elseif self.poke1genderv >= (1-self.poke1.gendf) then
+		self.poke1gender = "f_"
+	else
+		self.poke1gender = "e_"
+	end
+  else
+	self.poke1gender = ""
+  end
+  
+  if self.poke2.gendered then
+	if self.poke2genderv < self.poke2.gendm then
+		self.poke2gender = "m_"
+	elseif self.poke2genderv >= (1-self.poke2.gendf) then
+		self.poke2gender = "f_"
+	else
+		self.poke2gender = "e_"
+	end
+  else
+	self.poke2gender = ""
+  end
+  
+  p1draw = sprites["battle/pokemon/"..((self.st_shiny or self.poke1shiny) and "shiny/" or "")..(self.poke1gender or "")..(self.poke1.sprite or self.poke1.name).."_f"..(self.poke1.anim and ("_"..tostring(anim_stage)) or "")]
+  p2draw = sprites["battle/pokemon/"..((self.st_shiny or self.poke2shiny) and "shiny/" or "")..(self.poke2gender or "")..(self.poke2.sprite or self.poke2.name).."_b"..(self.poke2.anim and ("_"..tostring(anim_stage)) or "")]
+  -- ..(self.poke1.gendered and ("_"..tostring(anim_stage)
   if opponent ~= nil then
   love.graphics.draw(opponent,305,1)
   else
@@ -100,6 +127,18 @@ function scene:draw(dt)
   end
   
   --it almost feels optimized...
+  if self.poke1shiny then
+	love.graphics.draw(sprites["battle/siny"],70,351)
+  end
+  if self.poke2shiny then
+	love.graphics.draw(sprites["battle/siny"],470,10)
+  end
+  if self.poke1.gendered then
+	love.graphics.draw(sprites["battle/" .. self.poke1gender],30,351)
+  end
+  if self.poke2.gendered then
+	love.graphics.draw(sprites["battle/" .. self.poke2gender],430,10)
+  end
   drawtype(self.poke1.types[1],110,351)
   drawtype(self.poke2.types[2],150,351)
   drawtype(self.poke1.types[1],510,10)

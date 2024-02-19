@@ -4,7 +4,7 @@ trainers = {
     quote = "Father said I could never be a trainer. I'll show Father! I'll show you ALL!",
     desc = "He says his skin is absurdly sensitive, and that he melts into blood whenever he touches something that isn't a rectangle",
 	element = {"steel"},
-	starter = {"tritri"},
+	starter = {"alal"},
 	pronouns = {"he", "him"}
   },
   {
@@ -65,7 +65,7 @@ trainers = {
   },
   {
     name = "chadchad",
-    quote = "Fool! You stand no chance against my ... uhhhhhhhhhhhhhhhhhhhhhhhh",
+    quote = "Fool! You stand no chance against my uhh",
     desc = "A centaur who tends to play it safe.",
 	element = {"defeat"},
 	starter = {"joj"},
@@ -89,7 +89,7 @@ trainers = {
   },
   {
     name = "polly",
-    quote = "No-no-no, not THAT kind of sister!?",
+    quote = "No-no-no, not THAT kind of sister...",
     desc = "Retra describes them as \"Short, strong, and gamer\" and that isn't really the best description to have, huh?",
 	element = {"pixel", "you"},
 	starter = {"trie"},
@@ -97,26 +97,26 @@ trainers = {
   },
   {
     name = "alpha",
-    quote = "ERROR 404: Mercy not found",
+    quote = "What a magnificent robot it is. Such power and durability!",
     desc = "The European Space Agency's most durable exploration robot.",
 	element = {"electric", "flying"},
 	starter = {"err"},
 	pronouns = {"it"}
   },
   {
-    name = "mr me",
+    name = "mr e",
     quote = "Says here you're gonna lose.",
     desc = "placeholder",
 	element = {"defeat","psychic"},
-	starter = {"placeholder"},
-	pronouns = {"placeholder"}
+	starter = {"meem"},
+	pronouns = {"he", "him"}
   },
   {
     name = "greg",
     quote = "D:",
     desc = "placeholder",
 	element = {"electric"},
-	starter = {"placeholder"},
+	starter = {"cuuc"},
 	pronouns = {"placeholder"}
   },
   {
@@ -124,7 +124,7 @@ trainers = {
     quote = "GG",
     desc = "placeholder",
 	element = {"placeholder"},
-	starter = {"placeholder"},
+	starter = {"jij"},
 	pronouns = {"placeholder"}
   },
   {
@@ -132,7 +132,7 @@ trainers = {
     quote = "ZZZZZZ",
     desc = "placeholder",
 	element = {"placeholder"},
-	starter = {"placeholder"},
+	starter = {"jij"},
 	pronouns = {"placeholder"}
   }
 }

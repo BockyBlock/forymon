@@ -1993,7 +1993,7 @@ poke = {
     },
     egg = {"fairy"},
     growth = "slow",
-    desc = "trie: the absolute thing of all time. they are absurdly common, appearing from the dust and whizzing around."
+    desc = "usually it points towards the sun. if it points towards you, that means you light up its day!"
   },
   {
     name = "telt",
@@ -2011,14 +2011,14 @@ poke = {
     },
     egg = {"field"},
     growth = "slow",
-    desc = "trie: the absolute thing of all time. they are absurdly common, appearing from the dust and whizzing around."
+    desc = "its favorite battle strategy is to bore you to death"
   },
   {
-    name = "cucucu",
-    types = {"push", "notypeman"},
-    gendm = 0.5,
-    gendf = 0.5,
-    gaypb = 0,
+    name = "cucu",
+    types = {"push", "normal"},
+    gendm = 0.4,
+    gendf = 0.4,
+    gaypb = 0.5,
     catch = 255,
     expy = 256,
 	gendered = true,
@@ -2030,6 +2030,23 @@ poke = {
     egg = {"field"},
     growth = "slow",
     desc = "placeholder"
+  },
+  {
+    name = "fhnjuasf",
+    types = {},
+    gendm = 0,
+    gendf = 0,
+    gaypb = 0.5,
+    catch = 0,
+    expy = 0,
+    able = {
+      first = nil,
+      second = nil,
+      hidden = nil,
+    },
+    egg = {"cant"},
+    growth = "erratic",
+    desc = "uyjhgtrfhcfbbbhjmgfbhj"
   }
 }
 
