@@ -134,10 +134,10 @@ function scene:draw(dt)
 	love.graphics.draw(sprites["battle/siny"],470,10)
   end
   if self.poke1.gendered then
-	love.graphics.draw(sprites["battle/" .. self.poke1gender],30,351)
+	love.graphics.draw(sprites["battle/" .. self.poke1gender],430,10)
   end
   if self.poke2.gendered then
-	love.graphics.draw(sprites["battle/" .. self.poke2gender],430,10)
+	love.graphics.draw(sprites["battle/" .. self.poke2gender],30,351)
   end
   drawtype(self.poke1.types[1],110,351)
   drawtype(self.poke2.types[2],150,351)

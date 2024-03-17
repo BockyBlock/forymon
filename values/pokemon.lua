@@ -1996,7 +1996,8 @@ poke = {
     desc = "usually it points towards the sun. if it points towards you, that means you light up its day!"
   },
   {
-    name = "telt",
+    name = "tell me",
+    sprite = "telt",
     types = {"move", "fairy"},
     gendm = 0.5,
     gendf = 0.5,
@@ -2011,7 +2012,7 @@ poke = {
     },
     egg = {"field"},
     growth = "slow",
-    desc = "its favorite battle strategy is to bore you to death"
+    desc = "has lots of fuzzy hairs on its behind. those are a bit like antennae, or whiskers. they sense loud noises."
   },
   {
     name = "cucu",

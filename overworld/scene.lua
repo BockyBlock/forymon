@@ -10,6 +10,8 @@ function scene:load()
   self.undo_buffer = {}
   self.turn = 1
   
+  self.pokegenderv = ((love.math.random(1,100))/100)
+  
   self.searching = false
   self.searchstr = ""
   
@@ -48,11 +50,27 @@ function scene:load()
     end
   end
   
-  self.shiny = love.math.random(1,4096) == 69
+  self.shiny = love.math.random(1,4096) == 2763
+  
+  local follower = table.random(poke)
+  self.sprite = follower.sprite or follower.name
+  
+  if follower.gendered then
+	if self.pokegenderv < follower.gendm then
+		self.pokegender = "m_"
+	elseif self.pokegenderv >= (1-follower.gendf) then
+		self.pokegender = "f_"
+	else
+		self.pokegender = "e_"
+	end
+	self.spritefinal = self.pokegender..self.sprite
+  else
+	self.poke1gender = ""
+	self.spritefinal = self.sprite
+  end
   
   -- pokemon that follows the player around
-  local follower = table.random(poke)
-  self.follow = Object:new("pokemon", {sprite=follower.sprite or follower.name, x=0.5, y=0.5, layer=4, data=copyTable(follower)})
+  self.follow = Object:new("pokemon", {sprite=self.spritefinal, x=0.5, y=0.5, layer=4, data=copyTable(follower)})
   table.insert(self.objects, self.follow)
   
   if self.follow:getSprite() == sprites["overworld/wat"] then
@@ -67,6 +85,7 @@ function scene:load()
   self.camera = {x=0.5, y=0.5, zoom=2}
 
   self.moving = nil
+  
 end
 
 function scene:update(dt)
@@ -242,7 +261,23 @@ function scene:keyPressed(key)
           local follower = poke[self.searchstr]
           addUndo{reason = "follow_change",sprite = self.follow.sprite,x = self.follow.x,y = self.follow.y,dir = self.follow.dir,data = self.follow.data}
           removeFromTable(self.objects, self.follow)
-          self.follow = Object:new("pokemon", {sprite=follower.sprite or follower.name, x=self.follow.x, y=self.follow.y, dir=self.follow.dir, layer=4, data=copyTable(follower)})
+		  
+		  self.sprite = follower.sprite or follower.name
+		  if follower.gendered then
+			if self.pokegenderv < follower.gendm then
+				self.pokegender = "m_"
+			elseif self.pokegenderv >= (1-follower.gendf) then
+				self.pokegender = "f_"
+			else
+				self.pokegender = "e_"
+			end
+			self.spritefinal = self.pokegender..self.sprite
+		  else
+			self.poke1gender = ""
+			self.spritefinal = self.sprite
+		  end
+		  
+          self.follow = Object:new("pokemon", {sprite=self.spritefinal, x=self.follow.x, y=self.follow.y, dir=self.follow.dir, layer=4, data=copyTable(follower)})
           table.insert(self.objects, self.follow)
           self.searchstr = ""
           self.searching = false

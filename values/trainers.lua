@@ -97,7 +97,7 @@ trainers = {
   },
   {
     name = "alpha",
-    quote = "What a magnificent robot it is. Such power and durability!",
+    quote = "What a magnificent robot it is. Such power! Such durability!",
     desc = "The European Space Agency's most durable exploration robot.",
 	element = {"electric", "flying"},
 	starter = {"err"},
